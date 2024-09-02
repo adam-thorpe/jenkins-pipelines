@@ -1,13 +1,7 @@
-// node {
-// 	stage('Cleanup Workspace') {
-//         echo "Testing testing ... !"
-//     }
-// }
-
 pipeline {
     agent any
     parameters {
-        string(name: 'commitId', defaultValue: 'default-commit-id', description: 'Blah')
+        string(name: 'commitId', defaultValue: 'default-commit-id')
     }
     stages {
         stage('Example') {
