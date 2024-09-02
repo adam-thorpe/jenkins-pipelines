@@ -1,10 +1,10 @@
 pipeline {
 
-    agent {
-        node {
-            label 'agent-01'
-        }
-    }
+    // agent {
+    //     node {
+    //         label 'agent-01'
+    //     }
+    // }
 
     options {
         buildDiscarder logRotator( 
