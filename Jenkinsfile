@@ -1,14 +1,5 @@
-pipeline {
-    agent {
-        node any
+node {
+	stage('Cleanup Workspace') {
+        echo "Testing testing ... !"
     }
-    stages {
-        stage('Cleanup Workspace') {
-            steps {
-                sh """
-                echo "Testing testing ... !"
-                """
-            }
-        }
-    }   
 }
